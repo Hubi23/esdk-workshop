@@ -1,0 +1,17 @@
+:docinfo:
+= esdkWorkshop
+Documentation
+:nofooter:
+
+This document describes the esdkWorkshop app.
+
+include::subpage.adoc[]
+
+include::additionalpage.adoc[]
+
+== About
+
+esdkWorkshop +
+(C) Your Company
+
+https://your-website.com/
