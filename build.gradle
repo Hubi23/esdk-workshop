@@ -14,14 +14,15 @@ esdk {
 		vendorId = "es"
 		appId = "works"
 		shared = false
-		infosystems = []
-		tables = []
-		screens = [:]
-		data = []
-		enums = []
+		infosystems = ["IS.OWWORKS.SPUSAGE"]
+		tables = ["ErsatzteileApp"]
+		screens = ["70":["A"], "451":["A"]]
+		data = ["configurationData.json"]
+		enums = ["Spureason"]
 		namedTypes = []
 		languages = "DA"
-		essentialsVersions = []
+		essentialsVersions = ["2018r4n00-2018r4n6"]
+		workdirs = ["owworks"]
 	}
 
 	abas {

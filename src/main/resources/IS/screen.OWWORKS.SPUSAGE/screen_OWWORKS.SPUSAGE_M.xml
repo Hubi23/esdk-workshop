@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE frame SYSTEM "urn:x-abas.de:abasscreens-1.00.dtd">
+
+<frame customHelp="" frameType="M" msgId="spusage_owworks$0" stdHelp="25B.1">
+ <layout.grid>
+  <metainfo axis="row" grid="0" stretch="zoom" />
+  <metainfo axis="column" grid="0" stretch="zoom" />
+  <cell alignX="fill" alignY="fill" gridX="0" gridY="0">
+   <layout.split axis="row">
+    <pane.split>
+     <layout.notebook>
+      <pane.notebook msgId="spusage_owworks$1">
+       <layout.grid>
+        <metainfo axis="column" grid="2" indent="large" />
+        <cell alignY="beginning" gridX="0" gridY="0">
+         <label msgId="spusage_owworks_fhead_yworksersatzteil" />
+        </cell>
+        <cell alignY="beginning" gridX="1" gridY="0">
+         <erpfield s3Name="0:yworksersatzteil" />
+        </cell>
+        <cell alignY="beginning" gridX="2" gridY="0">
+         <label msgId="spusage_owworks_fhead_yworksartikel" />
+        </cell>
+        <cell alignY="beginning" gridX="3" gridY="0">
+         <erpfield s3Name="0:yworksartikel" />
+        </cell>
+        <cell alignY="beginning" gridX="0" gridY="1">
+         <label msgId="spusage_owworks_fhead_yworksverwgrund" />
+        </cell>
+        <cell alignY="beginning" gridX="1" gridY="1">
+         <erpfield s3Name="0:yworksverwgrund" />
+        </cell>
+        <cell alignY="beginning" gridX="2" gridY="1" />
+        <cell alignY="beginning" gridX="3" gridY="1" />
+        <cell alignY="beginning" gridX="0" gridY="2">
+         <label msgId="spusage_owworks_fhead_yworkslesteverwvon" />
+        </cell>
+        <cell alignY="beginning" gridX="1" gridY="2">
+         <erpfield s3Name="0:yworkslesteverwvon" />
+        </cell>
+        <cell alignY="beginning" gridX="2" gridY="2">
+         <label msgId="spusage_owworks_fhead_yworkslesteverwbis" />
+        </cell>
+        <cell alignY="beginning" gridX="3" gridY="2">
+         <erpfield s3Name="0:yworkslesteverwbis" />
+        </cell>
+       </layout.grid>
+      </pane.notebook>
+     </layout.notebook>
+    </pane.split>
+    <pane.split>
+     <table>
+      <erpfield access="readOnly" msgId="spusage_owworks_ftable_yworkstersatzteil" s3Name="1:yworkstersatzteil" />
+      <erpfield access="readOnly" msgId="spusage_owworks_ftable_yworkstersatztbez" s3Name="1:yworkstersatztbez" />
+      <erpfield access="readOnly" msgId="spusage_owworks_ftable_yworkstartikel" s3Name="1:yworkstartikel" />
+      <erpfield access="readOnly" msgId="spusage_owworks_ftable_yworkstletztverwam" s3Name="1:yworkstletztverwam" />
+      <erpfield access="readOnly" msgId="spusage_owworks_ftable_yworkstletztverwgr" s3Name="1:yworkstletztverwgr" />
+      <erpfield access="readOnly" msgId="spusage_owworks_ftable_yworkstneueverwam" s3Name="1:yworkstneueverwam" />
+      <erpfield access="readOnly" msgId="spusage_owworks_ftable_yworkstgrunddverw" s3Name="1:yworkstgrunddverw" />
+      <erpfield msgId="spusage_owworks_ftable_yworkstverwerfasse" s3Name="1:yworkstverwerfasse" />
+     </table>
+    </pane.split>
+   </layout.split>
+  </cell>
+ </layout.grid>
+</frame>
+
