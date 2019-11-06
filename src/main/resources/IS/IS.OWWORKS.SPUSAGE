@@ -71,11 +71,11 @@ Z#0#isauswahl##0####(1)######0#0#0#0##0##
 Z#0#isstufe##0####(1)######0#0#0#0##0##
 Z#0#isbstart##0####(0)######0#0#0#0##0##
 Z#0#isstartzeit##0####(0)######0#0#0#0##0##
-Z#1#isyworkslesteverwbis#GD2#0#Letzte Verwendung bis#(65)#(65)#(2)######1#1#0#0##0##
+Z#1#isyworkslesteverwbis#GD2#0#Letzte Verwendung bis#(65)#(65)#(2)#####java:de.abas.esdk.workshop.SpUsageEventHandler@works#1#1#0#0##0##
 Z#1#isyworksverwgrund#AZMK1000007#0#Verwendungsgrund#(65)#(65)#(2)######1#1#0#0##0##
 Z#1#isyworksersatzteil#P15:1#0#Ersatzteil#(65)#(65)#(2)######1#1#0#0##0##
 Z#1#isyworksartikel#P2:1#0#Artikel#(65)#(65)#(2)######1#1#0#0##0##
-Z#1#isyworkslesteverwvon#GD2#0#Leste Verwendung von#(65)#(65)#(2)######1#1#0#0##0##
+Z#1#isyworkslesteverwvon#GD2#0#Leste Verwendung von#(65)#(65)#(2)#####java:de.abas.esdk.workshop.SpUsageEventHandler@works#1#1#0#0##0##
 Z#0#ittabnr##1####(0)######0#0#0#0##0##
 Z#0#itzid##1####(0)######0#0#0#0##0##
 Z#0#itzn##1####(0)######0#0#0#0##0##
