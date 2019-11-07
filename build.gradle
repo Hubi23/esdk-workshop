@@ -15,8 +15,8 @@ esdk {
 		appId = "works"
 		shared = true
 		infosystems = ["IS.OWWORKS.SPUSAGE"]
-		tables = ["ErsatzteileApp"]
-		screens = ["70":["A"], "451":["A"]]
+		tables = ["ErsatzteileApp", "Teil"]
+		advancedScreens = ["70":["A"], "451":["A"], "2":["A","D"]]
 		data = ["configurationData.json"]
 		enums = ["Spureason"]
 		namedTypes = []

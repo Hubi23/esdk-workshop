@@ -1,98 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="/de.abas.screen.model.core/model/core.ecore" xmlns:schema="/de.abas.screen.model.schema/model/schema.ecore" xmlns:screen="/de.abas.screen.model.screen/model/screen.ecore" xsi:schemaLocation="/de.abas.screen.model.core/model/core.ecore platform:/de.abas.screen.model.core/model/core.ecore">
-  <screen:Screen variables="/1">
-    <language text="Deutsch" iso="de"/>
-    <id xsi:type="screen:DatabaseId" priority="A" groupName="Ersatzteil" group="1" number="15" numberName="ErsatzteileApp" screenNumber="451"/>
-    <frames>
-      <elements xsi:type="core:NotebookLayout">
-        <notebookPanes>
-          <elements xsi:type="core:GridLayout">
-            <cells alignmentY="center">
-              <elements xsi:type="core:Label">
-                <label viewLanguage="de" key="570f1f35-996c-4dbd-b9c1-9ead41a46276">
-                  <value key="de" value="Identnummer"/>
-                </label>
+  <screen:Screen variables="/1" featureType="erpgui" smartScreenId="NG_DATABASE" smartScreenVersion="1.0.0">
+    <popups>
+      <popup id="menuTable"/>
+      <popup id="menuExecute"/>
+    </popups>
+    <language code="68" text="Deutsch" iso="de"/>
+    <id xsi:type="screen:DatabaseId" name="Konfiguration/ErsatzteileApp" priority="A" groupName="Konfiguration" number="15" numberName="ErsatzteileApp" screenNumber="70"/>
+    <frames standardHelp="2.7">
+      <elements xsi:type="core:GridLayout">
+        <cells alignmentX="fill" alignmentY="fill">
+          <elements xsi:type="core:NotebookLayout">
+            <notebookPanes>
+              <elements xsi:type="core:GridLayout">
+                <cells alignmentY="center">
+                  <elements xsi:type="core:Label">
+                    <label viewLanguage="de" key="7c81ef9f28f3cd1f2d056c0b3f063150">
+                      <value key="de" value="Identnummer"/>
+                    </label>
+                  </elements>
+                </cells>
+                <cells column="1" alignmentY="center">
+                  <elements xsi:type="core:Input" dimX="15">
+                    <variable englishName="idno" name="nummer" type="NK15" guiType="INPUT" description="" width="15" screenProtection="änderbar" writeable="true" alias="true" meaning="Identnummer" changePriority="A" viewPriority="A" primaryName="num15"/>
+                  </elements>
+                </cells>
+                <cells column="2" alignmentY="center">
+                  <elements xsi:type="core:Label">
+                    <label viewLanguage="de" key="1e276b0ea6737a49b4522b0ae2e29930">
+                      <value key="de" value="Suchwort"/>
+                    </label>
+                  </elements>
+                </cells>
+                <cells column="3" alignmentY="center">
+                  <elements xsi:type="core:Input" dimX="30">
+                    <variable englishName="swd" name="such" type="SWK15" guiType="INPUT" description="" width="30" screenProtection="änderbar" writeable="true" alias="true" meaning="Suchwort" changePriority="A" viewPriority="A" primaryName="such15"/>
+                  </elements>
+                </cells>
+                <cells row="1" columnSpan="4" alignmentY="center">
+                  <elements xsi:type="core:Groupline">
+                    <label viewLanguage="de" key="958f1ca4-7a05-4839-bd35-a1d21007024d">
+                      <value key="de" value=" "/>
+                    </label>
+                  </elements>
+                </cells>
+                <cells row="2" alignmentY="center">
+                  <elements xsi:type="core:Label">
+                    <label viewLanguage="de" key="62579108-76ba-4bae-be06-d36d3ae7da7b">
+                      <value key="de" value="Datenbankname für Kommandos"/>
+                    </label>
+                  </elements>
+                </cells>
+                <cells column="1" row="2" alignmentY="center">
+                  <elements xsi:type="core:Input" dimX="40">
+                    <variable englishName="yworksdbcomname" name="yworksdbcomname" type="GL40" guiType="INPUT" description="" width="40" screenProtection="änderbar" writeable="true" skip="true" custom="true" meaning="Datenbankname für Kommandos" changePriority="A" viewPriority="A" primaryName="yworksdbcomname"/>
+                  </elements>
+                </cells>
+                <cells column="2" row="2" alignmentY="center"/>
+                <cells column="3" row="2" alignmentY="center"/>
+                <cells row="3" alignmentY="center">
+                  <elements xsi:type="core:Label">
+                    <label viewLanguage="de" key="c03195cc-e874-453d-96ae-2ba2620149e3">
+                      <value key="de" value="Datenbankname"/>
+                    </label>
+                  </elements>
+                </cells>
+                <cells column="1" row="3" alignmentY="center">
+                  <elements xsi:type="core:ComboBox" dimX="30">
+                    <variable englishName="yworksdbname" name="yworksdbname" type="A177" guiType="COMBOBOX" description="" width="30" screenProtection="änderbar" writeable="true" skip="true" custom="true" meaning="Datenbankname" changePriority="A" viewPriority="A" primaryName="yworksdbname"/>
+                  </elements>
+                </cells>
+                <cells column="2" row="3" alignmentY="center">
+                  <elements xsi:type="core:Label">
+                    <label viewLanguage="de" key="13c95685-2ed2-4550-9bf1-618e77896eb7">
+                      <value key="de" value="Datenbanknummer"/>
+                    </label>
+                  </elements>
+                </cells>
+                <cells column="3" row="3" alignmentY="center">
+                  <elements xsi:type="core:Input" dimX="3">
+                    <variable englishName="yworksdbnummer" name="yworksdbnummer" type="GL3" guiType="INPUT" description="" width="3" screenProtection="änderbar" writeable="true" skip="true" custom="true" meaning="Datenbanknummer" changePriority="A" viewPriority="A" primaryName="yworksdbnummer"/>
+                  </elements>
+                </cells>
+                <metaInfo insets="large" location="1"/>
               </elements>
-            </cells>
-            <cells column="1" alignmentY="center">
-              <elements xsi:type="core:Input" dimX="15">
-                <variable englishName="idno" name="nummer" type="NK15" guiType="INPUT" description="" width="15" screenProtection="änderbar" writeable="true" alias="true" meaning="Identnummer" changePriority="A" viewPriority="A" primaryName="num15"/>
-              </elements>
-            </cells>
-            <cells column="2" alignmentY="center">
-              <elements xsi:type="core:Label">
-                <label viewLanguage="de" key="01a730e5-cbc2-49fd-935b-e6287930bf17">
-                  <value key="de" value="Suchwort"/>
-                </label>
-              </elements>
-            </cells>
-            <cells column="3" alignmentY="center">
-              <elements xsi:type="core:Input" dimX="30">
-                <variable englishName="swd" name="such" type="SWK15" guiType="INPUT" description="" width="30" screenProtection="änderbar" writeable="true" alias="true" meaning="Suchwort" changePriority="A" viewPriority="A" primaryName="such15"/>
-              </elements>
-            </cells>
-            <cells row="1" columnSpan="4" alignmentY="center">
-              <elements xsi:type="core:Groupline">
-                <label viewLanguage="de" key="b6abd7b9-36aa-400b-9ed8-821dbedba34b">
-                  <value key="de" value=" "/>
-                </label>
-              </elements>
-            </cells>
-            <cells row="2" alignmentY="center">
-              <elements xsi:type="core:Label">
-                <label viewLanguage="de" key="547d8720-80c9-46f2-94f9-e6f5c37e3a0b">
-                  <value key="de" value="Artikel"/>
-                </label>
-              </elements>
-            </cells>
-            <cells column="1" row="2" alignmentY="center">
-              <elements xsi:type="core:ReferenceInput" dimX="16" dimY="1">
-                <variable englishName="yworksartikel" name="yworksartikel" type="P2:1" guiType="REFERENCE" description="" width="16" screenProtection="änderbar" writeable="true" custom="true" meaning="Artikel" changePriority="A" viewPriority="A" primaryName="yworksartikel"/>
-              </elements>
-            </cells>
-            <cells column="2" row="2" alignmentY="center"/>
-            <cells column="3" row="2" alignmentY="center"/>
-            <cells row="3" alignmentY="center">
-              <elements xsi:type="core:Label">
-                <label viewLanguage="de" key="5c1f5e43-b85d-458c-b6f6-d716021638f5">
-                  <value key="de" value="Lieferant"/>
-                </label>
-              </elements>
-            </cells>
-            <cells column="1" row="3" alignmentY="center">
-              <elements xsi:type="core:ReferenceInput" dimX="9" dimY="1">
-                <variable englishName="yworkslieferant" name="yworkslieferant" type="P1:1" guiType="REFERENCE" description="" width="9" screenProtection="änderbar" writeable="true" custom="true" meaning="Lieferant" changePriority="A" viewPriority="A" primaryName="yworkslieferant"/>
-              </elements>
-            </cells>
-            <cells column="2" row="3" alignmentY="center"/>
-            <cells column="3" row="3" alignmentY="center"/>
-            <cells row="4" alignmentY="center">
-              <elements xsi:type="core:Label">
-                <label viewLanguage="de" key="63d7169b-6914-4aff-b6df-3b11d02c6b31">
-                  <value key="de" value="Lieferantenartikelnummer"/>
-                </label>
-              </elements>
-            </cells>
-            <cells column="1" row="4" alignmentY="center">
-              <elements xsi:type="core:Input" dimX="50">
-                <variable englishName="yworksliefnummer" name="yworksliefnummer" type="GL50" guiType="INPUT" description="" width="50" screenProtection="änderbar" writeable="true" custom="true" meaning="Lieferantenartikelnummer" changePriority="A" viewPriority="A" primaryName="yworksliefnummer"/>
-              </elements>
-            </cells>
-            <cells column="2" row="4" alignmentY="center"/>
-            <cells column="3" row="4" alignmentY="center"/>
-            <cells row="5" alignmentY="center"/>
-            <cells column="1" row="5" alignmentY="center"/>
-            <cells column="2" row="5" alignmentY="center"/>
-            <cells column="3" row="5" alignmentY="center"/>
+              <label viewLanguage="de" key="d95984c6da90849d3f88401c8ff68171">
+                <value key="de" value="works"/>
+              </label>
+            </notebookPanes>
           </elements>
-          <label viewLanguage="de" key="6f6fc9e2-e88f-4da2-9391-60acb262f8e2">
-            <value key="de" value="works"/>
-          </label>
-        </notebookPanes>
+        </cells>
+        <metaInfo axis="column" stretch="zoom"/>
+        <metaInfo stretch="zoom"/>
       </elements>
+      <label viewLanguage="de" key="e826e633db426697a3d42be9755b5ace">
+        <value key="de" value="Zusatztabelle 1 - Gruppe 0"/>
+      </label>
     </frames>
   </screen:Screen>
-  <schema:Variables name="Ersatzteil">
+  <schema:Variables searchWord="V-15-00    " group="true" name="Konfiguration">
     <entries englishName="" name="grust" type="I9" guiType="INTEGER" description="" width="9" screenProtection="immer geschützt" meaning="Gruppe" changePriority="A" viewPriority="A" primaryName="grust"/>
     <entries englishName="grpNo" name="gruppe" type="GRN15" guiType="INPUT" description="" width="2" screenProtection="immer geschützt" alias="true" meaning="Gruppennummer" changePriority="A" viewPriority="A" primaryName="grust"/>
     <entries englishName="grpDescr" name="grbez" type="GRB15" guiType="INPUT" description="" width="80" screenProtection="immer geschützt" alias="true" meaning="Gruppenbezeichnung" changePriority="A" viewPriority="A" primaryName="grust"/>
@@ -182,11 +188,11 @@
     <entries englishName="freeText" name="ftext" type="TN" guiType="FREETEXT" description="" width="80" screenProtection="änderbar" writeable="true" meaning="Freitext 1" changePriority="A" viewPriority="A" primaryName="ftext"/>
     <entries englishName="freeText2" name="ftext2" type="TN" guiType="FREETEXT" description="" width="80" screenProtection="änderbar" writeable="true" meaning="Freitext 2" changePriority="A" viewPriority="A" primaryName="ftext2"/>
     <entries englishName="userBar1" name="sres1" type="BU1" description="" width="1" screenProtection="zeigen änderbar" writeable="true" meaning="Reserveleiste" changePriority="A" viewPriority="A" primaryName="sres1"/>
-    <entries englishName="yworksartikel" name="yworksartikel" type="P2:1" guiType="REFERENCE" description="" width="16" screenProtection="änderbar" writeable="true" custom="true" meaning="Artikel" changePriority="A" viewPriority="A" primaryName="yworksartikel"/>
-    <entries englishName="yworkslieferant" name="yworkslieferant" type="P1:1" guiType="REFERENCE" description="" width="9" screenProtection="änderbar" writeable="true" custom="true" meaning="Lieferant" changePriority="A" viewPriority="A" primaryName="yworkslieferant"/>
-    <entries englishName="yworksliefnummer" name="yworksliefnummer" type="GL50" guiType="INPUT" description="" width="50" screenProtection="änderbar" writeable="true" custom="true" meaning="Lieferantenartikelnummer" changePriority="A" viewPriority="A" primaryName="yworksliefnummer"/>
+    <entries englishName="yworksdbcomname" name="yworksdbcomname" type="GL40" guiType="INPUT" description="" width="40" screenProtection="änderbar" writeable="true" skip="true" custom="true" meaning="Datenbankname für Kommandos" changePriority="A" viewPriority="A" primaryName="yworksdbcomname"/>
+    <entries englishName="yworksdbnummer" name="yworksdbnummer" type="GL3" guiType="INPUT" description="" width="3" screenProtection="änderbar" writeable="true" skip="true" custom="true" meaning="Datenbanknummer" changePriority="A" viewPriority="A" primaryName="yworksdbnummer"/>
+    <entries englishName="yworksdbname" name="yworksdbname" type="A177" guiType="COMBOBOX" description="" width="30" screenProtection="änderbar" writeable="true" skip="true" custom="true" meaning="Datenbankname" changePriority="A" viewPriority="A" primaryName="yworksdbname"/>
     <entries englishName="rowIdNo" name="tabnr" type="TZN" guiType="INPUT" description="" tableEntry="true" width="5" screenProtection="immer geschützt" meaning="Zeilen-ID" changePriority="A" viewPriority="A" primaryName="tabnr"/>
-    <entries englishName="rowId" name="zid" type="IDZ15:1" guiType="REFERENCE" description="" tableEntry="true" width="30" screenProtection="immer geschützt" skip="true" meaning="Zeilen-ID" changePriority="A" viewPriority="A" primaryName="zid"/>
+    <entries englishName="rowId" name="zid" type="IDZ15:0" guiType="REFERENCE" description="" tableEntry="true" width="30" screenProtection="immer geschützt" skip="true" meaning="Zeilen-ID" changePriority="A" viewPriority="A" primaryName="zid"/>
     <entries englishName="rowNo" name="zn" type="I5" guiType="INTEGER" description="" tableEntry="true" width="5" screenProtection="immer geschützt" skip="true" meaning="Laufende Zeilennummer" changePriority="A" viewPriority="A" primaryName="zn"/>
     <entries englishName="print" name="budruck" type="BU14" description="" tableEntry="true" width="1" screenProtection="zeigen änderbar" writeable="true" skip="true" meaning="Drucken" changePriority="A" viewPriority="A" primaryName="budruck"/>
     <entries englishName="print2" name="budruck2" type="BU8" description="" tableEntry="true" width="1" screenProtection="zeigen änderbar" writeable="true" skip="true" meaning="Drucken" changePriority="A" viewPriority="A" primaryName="budruck2"/>
@@ -197,7 +203,5 @@
     <entries englishName="freeTextTab" name="tftext" type="TN" guiType="FREETEXT" description="" tableEntry="true" width="80" screenProtection="änderbar" writeable="true" meaning="Freitext 1" changePriority="A" viewPriority="A" primaryName="tftext"/>
     <entries englishName="freeTextTab2" name="tftext2" type="TN" guiType="FREETEXT" description="" tableEntry="true" width="80" screenProtection="änderbar" writeable="true" meaning="Freitext 2" changePriority="A" viewPriority="A" primaryName="tftext2"/>
     <entries englishName="userBarTab1" name="tsres1" type="BU1" description="" tableEntry="true" width="1" screenProtection="zeigen änderbar" writeable="true" meaning="Reserveleiste" changePriority="A" viewPriority="A" primaryName="tsres1"/>
-    <entries englishName="yworksverdate" name="yworksverdate" type="GD2" guiType="DATE" description="" tableEntry="true" width="8" screenProtection="änderbar" writeable="true" custom="true" meaning="Verwendungsdatum" changePriority="A" viewPriority="A" primaryName="yworksverdate"/>
-    <entries englishName="yworksverwgrund" name="yworksverwgrund" type="AZMK1000007" guiType="COMBOBOX" description="" tableEntry="true" width="11" screenProtection="änderbar" writeable="true" custom="true" meaning="Verwendungsgrund" changePriority="A" viewPriority="A" primaryName="yworksverwgrund"/>
   </schema:Variables>
 </xmi:XMI>

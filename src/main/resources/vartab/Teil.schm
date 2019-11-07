@@ -1,0 +1,27 @@
+database master Teil {
+	number 2
+	classname Part
+	structure Artikel {
+		groupNumber 1
+		head {
+			field BU3 skip createsp {
+				label ""
+				heading ""
+				description "Neues Ersatzteil anlegen"
+				screen VIEW_EDITABLE
+				showPriority A
+				changePriority A
+			}
+			field B1 sp {
+				label ""
+				heading ""
+				description "Ersatzteil vorhanden"
+				screen EDITABLE
+				showPriority A
+				changePriority A
+			}
+		}
+		table {
+		}
+	}
+}
